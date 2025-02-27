@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app" id="app-container">
+      <header class="header">
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="#/" class="header__link">Top</a>
+            </li>
+            <li class="header__item">
+              <a href="#/new" class="header__link">New</a>
+            </li>
+            <li class="header__item">
+              <a href="#/ask" class="header__link">Ask</a>
+            </li>
+            <li class="header__item">
+              <a href="#/show" class="header__link">Show</a>
+            </li>
+            <li class="header__item">
+              <a href="#/favorites" class="header__link">Favorites</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div id="route-container">
+          <div id="router-outlet"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js" type="module"></script>
+    <!-- external library for routing:
+    Navigo — это лёгкий JavaScript-роутер для одностраничных приложений. Он предоставляет простой и гибкий способ обработки клиентской маршрутизации, позволяя разработчикам создавать динамические веб-приложения с чистыми URL-адресами и плавной навигацией без перезагрузки страницы.
+    -->
+    <!--<script src="//unpkg.com/navigo@6"></script>-->
+    <script src="//unpkg.com/navigo"></script>
+  </body>
+</html>
