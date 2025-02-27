@@ -4,7 +4,7 @@ window.addEventListener("hashchange", function (e) {
   const hash = window.location.hash; //e.newURL.split("#")[1];
   //console.log("window hash", window.location.hash);
   const headerLinks = document.querySelectorAll(".header__link");
-  console.log(headerLinks);
+
   headerLinks.forEach((link) => {
     link.classList.remove("header__link_active");
     if (link.getAttribute("href") === `#${hash}`) {
