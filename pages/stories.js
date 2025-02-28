@@ -29,7 +29,7 @@ async function Stories(path) {
     favBtn.addEventListener("click", async function () {
       const story = JSON.parse(this.dataset.story);
       const isFavorited = checkFavorite(favorites, story);
-      // console.log("is favorited? ", isFavorited);
+      story.isFavorite = isFavorited;
 
       store.dispatch({
         type: isFavorited ? "REMOVE_FAVORITE" : "ADD_FAVORITE",

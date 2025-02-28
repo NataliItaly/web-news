@@ -21,7 +21,7 @@ export default function (story) {
                 ? "./images/heart-icon-filled.svg"
                 : "./images/heart-icon.svg"
             }>
-            ${story.isFavorite ? "Remove Trom Favorites" : "Add To Favorites"}
+            ${story.isFavorite ? "Remove From Favorites" : "Add To Favorites"}
           </span>
         </div>
       </div>

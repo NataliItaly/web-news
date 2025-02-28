@@ -1,13 +1,13 @@
 import RouterHandler from "./router.js";
 
-window.addEventListener("hashchange", function (e) {
+window.addEventListener("hashchange", function () {
   const hash = window.location.hash; //e.newURL.split("#")[1];
   //console.log("window hash", window.location.hash);
   const headerLinks = document.querySelectorAll(".header__link");
-
+  console.log(hash);
   headerLinks.forEach((link) => {
     link.classList.remove("header__link_active");
-    if (link.getAttribute("href") === `#${hash}`) {
+    if (link.getAttribute("href") === hash) {
       link.classList.add("header__link_active");
     }
   });
