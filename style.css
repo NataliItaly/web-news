@@ -33,7 +33,8 @@ body {
 }
 
 .heart {
-  height: 12px;
+  height: 18px;
+  fill: rgb(245, 123, 144);
 }
 
 header .flex a {

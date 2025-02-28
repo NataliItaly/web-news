@@ -15,7 +15,6 @@ window.addEventListener("hashchange", function (e) {
 
 class App {
   constructor() {
-    console.log("work");
     new RouterHandler();
   }
 }

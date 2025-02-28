@@ -30,7 +30,7 @@ export default async function Item() {
 
 async function getStory() {
   const id = window.location.hash.split("=")[1];
-  console.log(id);
+  // console.log(id);
 
   const response = await fetch(`${url}/item/${id}`);
   const stories = await response.json();
